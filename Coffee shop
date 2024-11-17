@@ -1,0 +1,36 @@
+print("Welcome To Cafe Coffee Day")
+
+print('''Our Menu is:
+          1)Coffee:90/-
+          2)Cappuccino:180/-
+          3)Milk Shake:250/-
+          4)Smoothie:150/-''')
+
+menu={
+    'coffee':90,
+    'cappuccino':180,
+    'milk shake':250,
+    'smoothie':150
+    }
+order1=input("Enter the item from the above Menu:")
+
+if order1 in menu:
+    total=menu[order1]
+    print(f"your order {order1} has been placed successfully")
+else:
+    print("please select the item from the above menu")
+
+order2=input("Do you want to place another order?(yes/no)")
+
+if order2=="yes":
+    item2=input("Enter the second item:")
+    if item2 in menu:
+        total=total+menu[item2]
+    else:
+        print("Thank You")
+
+else:
+    print("Thank You Have a nice day!!")
+print("The Total Amount is:",total)
+
+
