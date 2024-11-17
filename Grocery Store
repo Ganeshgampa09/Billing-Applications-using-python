@@ -1,0 +1,55 @@
+print("Welcome to A-Z grocery store")
+print('''The available items are
+      1)sugar
+      2)salt
+      3)dal
+      4)ghee''')
+
+grocery={'sugar':50,'salt':30,'dal':160,'ghee':700}
+
+option=eval(input("Enter How many products do you want:-"))
+amount=0
+
+if (option==1):
+    p=input("Enter any one product from the above grocery list:-")
+    q=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p]*q
+    
+elif (option==2):
+    p2=input("Enter the first product from the above grocery list:-")
+    q2=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p2]*q2
+    p21=input("Enter the second product from the above grocery list:-")
+    q21=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p21]*q21
+    
+elif (option==3):
+    p3=input("Enter the first product from the above grocery list:-")
+    q3=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p3]*q3
+    p31=input("Enter the second product from the above grocery list:-")
+    q31=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p31]*q31
+    p32=input("Enter the third product from the above grocery list:-")
+    q32=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p32]*q32
+
+elif (option==4):
+    p4=input("Enter the first product from the above grocery list:-")
+    q4=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p4]*q4
+    p41=input("Enter the second product from the above grocery list:-")
+    q41=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p41]*q41
+    p42=input("Enter the third product from the above grocery list:-")
+    q42=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p42]*q42
+    p43=input("Enter the third product from the above grocery list:-")
+    q43=int(input("Enter how many kgs do you want:-"))
+    amount=grocery[p43]*q43
+    
+
+else:
+    print("Enter valid input")
+
+print("The final amount of all products is:-",amount )
