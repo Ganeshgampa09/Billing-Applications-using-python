@@ -1,0 +1,33 @@
+username1="435435"
+password1="ganesh"
+
+username=input("Enter the username:-")
+password=input("enter the password:-")
+if (username==username1 and password==password1):
+    print("The available options are:-\n 1)Deposit\n 2)withdraw\n 3)ministatement\n 4)exit")
+    print("Your bank balance is:-5000")
+    amount=5000
+    option=int(input("Select the option:-"))
+
+    if (option==1):
+       deposite=int(input("Enter the amount to be deposited:-"))
+       amount+=deposite
+       print("your deposite is successfully completed")
+       print("Your total balance is:-",amount)
+
+    elif (option==2):
+        withdraw=int(input("Enter the amount to be withdrawn:-"))
+        amount-=withdraw
+        print("your withdraw is successfully completed.")
+        print("Your total balance is:- ",amount)
+
+    elif (option==3):
+        print("username:-",username)
+        print("Total amount:-",amount)
+        print("thanks for visiting")
+
+    elif (option==4):
+        print("successfully loggedout")
+
+else:
+    print("please enter valid login details")
